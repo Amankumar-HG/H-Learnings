@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===== Scroll-Up Button ===== */
+.scrbtn {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    width: 50px;
+    height: 50px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(45%);
+    cursor: pointer;
+    transform: translate(9863, 7620);
+    transition: all 200ms ease-in-out;
+}
+
+.scrbtn .icon {
+    background: url("./assets/icons/arrow-up-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 26px;
+    width: 26px;
+    display: block;
+}
+
+.scrbtn.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.scrbtn.hide {
+    visibility: hidden;
+    opacity: 0;
+}
