@@ -1,35 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.container{
+.container {
     width: 400px;
     border-radius: 8px;
     padding: 40px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
-                0 5px 12px -2px rgba(0, 0, 0, 0.1),
-                0 18px 36px -6px rgba(0, 0, 0, 0.1);
+        0 5px 12px -2px rgba(0, 0, 0, 0.1),
+        0 18px 36px -6px rgba(0, 0, 0, 0.1);
 }
 
-.container .title{
+.container .title {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container form input{
+.container form input {
     display: none;
 }
 
-.container form .category{
+.container form .category {
     margin-top: 10px;
     padding-top: 20px;
 
@@ -38,7 +38,7 @@ body{
     grid-gap: 15px;
 }
 
-.category label{
+.category label {
     /* width: 100%; */
     /* height: 65px; */
     height: 145px;
@@ -58,23 +58,23 @@ body{
 } */
 
 
-#visa:checked ~ .category .visaMethod,
-#mastercard:checked ~ .category .mastercardMethod,
-#rupay:checked ~ .category .paypalMethod,
-#upi:checked ~ .category .amexMethod{
+#visa:checked~.category .visaMethod,
+#mastercard:checked~.category .mastercardMethod,
+#rupay:checked~.category .paypalMethod,
+#upi:checked~.category .amexMethod {
     box-shadow: 0px 0px 0px 1px #6064b6;
 }
 
 
-#visa:checked ~ .category .visaMethod .check,
-#mastercard:checked ~ .category .mastercardMethod .check,
-#rupay:checked ~ .category .paypalMethod .check,
-#upi:checked ~ .category .amexMethod .check{
+#visa:checked~.category .visaMethod .check,
+#mastercard:checked~.category .mastercardMethod .check,
+#rupay:checked~.category .paypalMethod .check,
+#upi:checked~.category .amexMethod .check {
     display: block;
 }
 
 
-label .imgName{
+label .imgName {
     display: flex;
     /* justify-content: space-between;
      */
@@ -85,7 +85,7 @@ label .imgName{
     gap: 10px;
 }
 
-.imgName span{
+.imgName span {
     /* margin-left: 20px; */
     font-family: Arial, Helvetica, sans-serif;
 
@@ -94,7 +94,7 @@ label .imgName{
     transform: translateY(-72%);
 }
 
-.imgName .imgContainer{
+.imgName .imgContainer {
     width: 50px;
     display: flex;
     justify-content: center;
@@ -105,35 +105,35 @@ label .imgName{
     transform: translateY(-35%);
 }
 
-img{
+img {
     width: 50px;
     height: auto;
 }
 
-.visa img{
+.visa img {
     width: 80px;
     /* margin-left: 5px; */
 }
 
-.mastercard img{
+.mastercard img {
     width: 65px;
 }
 
-.rupay img{
+.rupay img {
     width: 100px;
 }
 
-.upi img{
+.upi img {
     width: 100px;
 }
 
-.check{
+.check {
     display: none;
     position: absolute;
     top: -4px;
     right: -4px;
 }
 
-.check i{
+.check i {
     font-size: 18px;
 }

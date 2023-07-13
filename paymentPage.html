@@ -1,57 +1,76 @@
-<!--Font Awesome CDN-->
-<link rel="stylesheet" href="paymentPage.css"  />
-<div class="container">
-    <div class="title">
-        <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.harbingergroup.com/wp-content/themes/harbinger/images/favicon.png"
+        type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./styles/paymentPage.css" />
+    <title>H-Learning</title>
+</head>
+
+<body>
+
+    <!-- ===== Main Contents ===== -->
+    <div class="container">
+        <div class="title">
+            <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+        </div>
+
+        <form action="#">
+            <input type="radio" name="payment" id="visa">
+            <input type="radio" name="payment" id="mastercard">
+            <input type="radio" name="payment" id="paypal">
+            <input type="radio" name="payment" id="AMEX">
+
+
+            <div class="category">
+                <label for="visa" class="visaMethod">
+                    <div class="imgName">
+                        <div class="imgContainer visa">
+                            <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                        </div>
+                        <span class="name">VISA</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="mastercard" class="mastercardMethod">
+                    <div class="imgName">
+                        <div class="imgContainer mastercard">
+                            <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                        </div>
+                        <span class="name">Mastercard</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="rupay" class="rupayMethod">
+                    <div class="imgName">
+                        <div class="imgContainer rupay">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/2560px-RuPay.svg.png"
+                                alt="">
+                        </div>
+                        <span class="name">Rupay</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="upi" class="upiMethod">
+                    <div class="imgName">
+                        <div class="imgContainer upi">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png"
+                                alt="">
+                        </div>
+                        <span class="name">UPI</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+            </div>
+        </form>
     </div>
 
-    <form action="#">
-        <input type="radio" name="payment" id="visa">
-        <input type="radio" name="payment" id="mastercard">
-        <input type="radio" name="payment" id="paypal">
-        <input type="radio" name="payment" id="AMEX">
+</body>
 
-
-        <div class="category">
-            <label for="visa" class="visaMethod">
-                <div class="imgName">
-                    <div class="imgContainer visa">
-                        <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="" >
-                    </div>
-                    <span class="name">VISA</span>
-                </div>
-                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
-            </label>
-
-            <label for="mastercard" class="mastercardMethod">
-                <div class="imgName">
-                    <div class="imgContainer mastercard">
-                        <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
-                    </div>
-                    <span class="name">Mastercard</span>
-                </div>
-                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
-            </label>
-
-            <label for="rupay" class="rupayMethod">
-                <div class="imgName">
-                    <div class="imgContainer rupay">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/2560px-RuPay.svg.png" alt="">
-                    </div>
-                    <span class="name">Rupay</span>
-                </div>
-                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
-            </label>
-
-            <label for="upi" class="upiMethod">
-                <div class="imgName">
-                    <div class="imgContainer upi">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="" >
-                    </div>
-                    <span class="name">UPI</span>
-                </div>
-                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
-            </label>
-        </div>
-    </form>
-</div>
+</html>
