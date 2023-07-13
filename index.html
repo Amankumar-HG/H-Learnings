@@ -1,169 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.harbingergroup.com/wp-content/themes/harbinger/images/favicon.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>H-Learning</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-    <!-- ===== Navigation Bar ===== -->
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="./index.html">H-Learning</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#id-navbarNav" aria-controls="id-navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="id-navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary">Logout</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <!-- font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/favicon.webp" type="image/x-icon" />
+
+    
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>H-learning</title>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar hide" id="nav">
+      <div class="logo">
+        <a href="./index.html"
+          ><img
+            src="./assets/icons/harbinger-logo (1).webp"
+            alt="Header logo"
+            width="199"
+            height="65"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <a href="#home" class="navLink"> Home </a>
+          <a href="#Courses" class="navLink"> Courses </a>
+          <a href="#dashboard" class="navLink">Dashboard </a>
+          <a href="#upcoming" class="navLink">Upcoming Events</a>
+          <a href="#contact" class="navLink">Contact</a>
+          <a href="#about" class="navLink">About</a>
+          <button>
+            Log out
+          </button>
+        </ul>
+      </div>
+      <div class="burger">
+        <i class="fa-solid fa-bars"></i>
     </div>
+    </nav>
 
-    <!-- ===== Main Contents ===== -->
-    <div>
-        <div class="slider">
-            <div>
-                <h1>Welcome to the Course Management System</h1><br />
-                <p>Explore our courses and take your learning to the next level!</p><br />
-                <a href="#" class="btn btn-primary btn-lg">Explore More</a>
-            </div>
+
+
+    
+
+    <!-- Navbar Ends Here -->
+
+
+
+
+
+       <!-- Footer Starts here -->
+       <footer class="footer section">
+
+
+        <div class="text">
+            H-learning is a premier course provider committed to equipping individuals with valuable skills and knowledge. With a wide array of courses spanning diverse subjects, we offer top-quality education to empower learners worldwide.
         </div>
-        <section id="courses" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>Our Courses</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card mb-4 w-100">
-                            <div class="card-img-container">
-                                <img src="./assets/images/html.avif" class="card-img-top" alt="HTML Course">
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">HTML Course</h5>
-                                <p class="card-text">Learn the basics of HTML.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Enroll Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card mb-4 w-100">
-                            <div class="card-img-container">
-                                <img src="./assets/images/css.avif" class="card-img-top" alt="CSS Course">
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">CSS Course</h5>
-                                <p class="card-text">Master CSS and create stunning web designs.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Enroll Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card mb-4 w-100">
-                            <div class="card-img-container">
-                                <img src="./assets/images/javascript.png.png" class="card-img-top" alt="JavaScript Course">
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">JavaScript Course</h5>
-                                <p class="card-text">Learn JavaScript and build interactive web applications.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Enroll Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-12 text-center">
-                        <a href="#" class="btn btn-primary btn-lg">View More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="./assets/images/IMG-20230704-WA0014.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8" style="padding-top: 2em;">
-                        <h2>About Our Team</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tincidunt lorem, nec eleifend est. Duis pellentesque bibendum elit, a efficitur lacus efficitur ac.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+        <div class="quicklinks">
+            <h2 class="title">
+                Quick Links
+            </h2>
+            <a href="#features" class="link">
+                Features
+            </a>
+            <a href="#Apps" class="link">
+                App
+            </a>
+            <a href="#security" class="link">
+                Security
+            </a>
+            <a href="#Team" class="link">
+                Team
+            </a>
 
-    <!-- ===== Footer ===== -->
-    <div>
-        <footer class="bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>H-Learning</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tincidunt lorem, nec eleifend est. Duis pellentesque bibendum elit.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Courses</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Contact Us</h5>
-                        <ul class="list-unstyled">
-                            <li>Email: info@example.com</li>
-                            <li>Phone: +1 123-456-7890</li>
-                            <li>Address: 123 Main Street, City, Country</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
 
-    <!-- ==== Scroll-Up Arrow ===== -->
+      
+
+        <div class="documents">
+            <h2 class="title">
+                Documents
+            </h2>
+            <a href="" class="link">
+                Privacy Policy
+            </a>
+            <a href="" class="link">
+                Terms and Conditions
+            </a>
+            <a href="" class="link">
+                Legal Terms
+            </a>
+
+        </div>
+
+        <div class="Copyright">
+            &#169 H-Learning
+            <script>document.write(new Date().getFullYear());</script><br> All Rights Reserved.
+        </div>
+
+
+
+
+
+    </footer>
+
+
+    <!-- Footer Ends here -->
+
+
     <div class="scrbtn hide" id="top">
         <div class="icon"></div>
     </div>
 
-    <!-- ===== Scripts and Other ===== -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <script src="./script.js"></script>
-</body>
+  </body>
 
+  
 </html>
