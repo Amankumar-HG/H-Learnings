@@ -1,0 +1,94 @@
+.circle {
+  width: 3em;
+  height: 3em;
+  background-color: black;
+  color: white;
+  border-radius: 2em;
+  padding: 0.7em;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  height: 380px;
+  width: 300px;
+  margin: 30px 40px 0px 30px;
+  background: #e58989;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 26px 26px 53px #ededed, -26px -26px 53px #ffffff;
+}
+
+.card-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-link {
+  margin-top: 10px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  margin-block: auto;
+}
+
+.progress-bar {
+  height: 100%;
+}
+
+.progress-label {
+  padding-top: 10px;
+  height: 20px;
+  font-size: medium;
+}
