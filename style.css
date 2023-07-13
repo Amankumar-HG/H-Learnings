@@ -40,3 +40,55 @@
     visibility: hidden;
     opacity: 0;
 }
+.slider {
+
+    /*background-image: url('slider-image.jpg');*/
+
+    background-color: black;
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: #fff;
+
+}
+
+
+
+
+.card-img-container {
+
+    flex-grow: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+
+
+.card-img-container img {
+
+    object-fit: cover;
+
+    height: 100%;
+
+    width: 100%;
+
+}
